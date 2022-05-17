@@ -1,17 +1,67 @@
-/* Error: Undefined variable.
- *    ,
- * 27 |     background: $very-dark-blue;
- *    |                 ^^^^^^^^^^^^^^^
- *    '
- *   style.scss 27:17  root stylesheet */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 27 \2502      background: $very-dark-blue;\d\a    \2502                  ^^^^^^^^^^^^^^^\a    \2575 \a   style.scss 27:17  root stylesheet";
+body, html {
+  font-size: 10px;
+  font-family: "Outfit", sans-serif;
+}
+
+.main {
+  background: hsl(212deg, 45%, 89%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: hsl(0deg, 0%, 100%);
+  width: 32rem;
+  height: 49.7rem;
+  border-radius: 2rem;
+  box-shadow: 0px 2.5rem 2.5rem rgba(0, 0, 0, 0.0476518);
+  padding: 1.6rem 1.6rem 4rem;
+  text-align: center;
+}
+.card__img {
+  width: 100%;
+  height: 28.8rem;
+  margin-bottom: 2.4rem;
+}
+.card__img > img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.card__header {
+  color: hsl(218deg, 44%, 22%);
+  font-size: 2.2rem;
+  line-height: 2.772rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.card__text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.89rem;
+  padding: 0 1.6rem;
+  color: hsl(220deg, 15%, 55%);
+}
+
+@media screen and (max-width: 1280px) {
+  body, html {
+    font-size: 8.89px;
+  }
+}
+@media screen and (max-width: 430px) {
+  body, html {
+    font-size: 11.04px;
+  }
+}
+@media screen and (max-width: 400px) {
+  body, html {
+    font-size: 10px;
+  }
 }
